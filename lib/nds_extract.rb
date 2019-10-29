@@ -9,13 +9,17 @@ pp directors_database
 
 def directors_totals(nds)
   result = {}
-  nil
+  name_index = 0
+  while name_index < directors_database.length do
+    current_director_name = directors_database[name_index]
+    result[current_director_name = gross_for_director(current_director_name)
+    name_index += 1
+  end
+  result
 end
 
-# Find a way to accumulate the :worldwide_grosses and return that Integer
-# using director_data as input
+
 def gross_for_director(director_data)
-  #while movie_index < movie length, add worldwide gross to a director sum
   movie_index = 0
   director_gross = 0
   while movie_index < director_data[:movies].length do
