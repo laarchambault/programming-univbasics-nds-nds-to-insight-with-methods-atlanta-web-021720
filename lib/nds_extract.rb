@@ -4,14 +4,13 @@ require 'directors_database'
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
-require 'pp'
-pp directors_database
+
 
 def directors_totals(nds)
   result = {}
   name_index = 0
-  while name_index < directors_database.length do
-    current_director_name = directors_database[name_index]
+  while name_index < nds.length do
+    current_director_name = nds[name_index]
     result[current_director_name = gross_for_director(current_director_name)
     name_index += 1
   end
