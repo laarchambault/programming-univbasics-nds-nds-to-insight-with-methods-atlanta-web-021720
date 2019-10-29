@@ -4,6 +4,8 @@ require 'directors_database'
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+require 'pp'
+pp directors_database
 
 def directors_totals(nds)
   result = {}
@@ -13,4 +15,5 @@ end
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
+  #while movie_index < movie length, add worldwide gross to a director sum
 end
